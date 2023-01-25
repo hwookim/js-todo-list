@@ -3,6 +3,8 @@ const addTodoButton = document.querySelector(".addTodoButton");
 const todoList = document.querySelector(".todoList");
 
 function addTodo(value) {
+  if (!value) return;
+
   const newTodoItem = document.createElement("div");
   newTodoItem.classList.add("todoItem");
   newTodoItem.innerText = value;
