@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chrome 브라우저 포커스 제거 */
+
+input:focus,
+select:focus,
+option:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+h1.title {
+  padding: 8px 0;
+
+  color: #0c2038;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h2.subtitle {
+  padding: 0 2px;
+
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+/* Layout */
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #f4f6f8;
+}
+
+.container {
+  padding-top: 24px;
+  width: 800px;
+}
+
+.headerPage {
+  margin-bottom: 16px;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.todoBody {
+  padding: 32px 64px;
+
+  border-radius: 16px;
+  background: #fff;
+}
+
+.addTodo {
+  margin: 24px 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Basic Form, INPUT */
+
+.addInput {
+  padding: 0 16px;
+  width: 100%;
+
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.addInput:focus {
+  border: 2px solid #005cdc;
+  color: #000;
+}
+
+.addInput::placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Button */
+
+.addBtn {
+  width: 96px;
+  height: 48px;
+
+  border: none;
+  border-radius: 6px;
+  background: #005cdc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todoList {
+  width: 100%;
+}
+
+.todoItem {
+  padding: 16px 0;
+
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.checkBox {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+/* Copyright */
+
+.copyright {
+  padding: 8px;
+  
+  color: #ccc;
+  font-size: 12px;
+}

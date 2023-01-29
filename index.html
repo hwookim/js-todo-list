@@ -4,13 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>TODO-LIST</title>
   </head>
   <body>
-    <input class="todoInput" />
-    <button class="addTodoButton">추가</button>
-    <div class="todoList"></div>
-
+    <div class="container">
+      <div class="headerPage">
+        <h1 class="title">나의 할 일 목록</h1>
+        <h2 class="subtitle">To-do list</h2>
+      </div>
+      <div class="todoBody">
+        <div class="addTodo">
+          <input type="text" class="addInput" placeholder="할 일 작성란" />
+          <button class="addBtn">추가</button>
+        </div>
+        <div class="todoList">
+          <label class="todoItem">
+            <input class="checkBox" type="checkbox" />
+            첫번째 할 일
+          </label>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          본 콘텐츠는 코드 교육을 위해 제작되었으며, 재판매 및 무단도용시
+          저작권법 등에 따라 법적책임을 질 수 있습니다.
+        </p>
+        <p>ⓒwecode ⓒgracefulrain</p>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

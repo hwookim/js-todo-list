@@ -1,16 +1,19 @@
-const todoInput = document.querySelector(".todoInput");
-const addTodoButton = document.querySelector(".addTodoButton");
+const addInput = document.querySelector(".addInput");
+const addBtn = document.querySelector(".addBtn");
 const todoList = document.querySelector(".todoList");
 
 function addTodo(value) {
   if (!value) return;
 
-  const newTodoItem = document.createElement("div");
+  const newTodoItem = document.createElement("label");
   newTodoItem.classList.add("todoItem");
-  newTodoItem.innerText = value;
+  newTodoItem.innerHTML = `
+    <input class="checkBox" type="checkbox" />
+    ${value}
+  `.trim();
 
   todoList.appendChild(newTodoItem);
-  todoInput.value = "";
+  addInput.value = "";
 }
 
 function handleKeyupInput(event) {
@@ -20,8 +23,8 @@ function handleKeyupInput(event) {
 }
 
 function handleClickButton() {
-  addTodo(todoInput.value);
+  addTodo(addInput.value);
 }
 
-todoInput.addEventListener("keyup", handleKeyupInput);
-addTodoButton.addEventListener("click", handleClickButton);
+addInput.addEventListener("keyup", handleKeyupInput);
+addBtn.addEventListener("click", handleClickButton);
